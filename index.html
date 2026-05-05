@@ -3,15 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ShipIt Palette — Modern color palette studio</title>
-    <meta name="description" content="ShipIt Palette — generate beautiful color palettes, preview every component live, export to 14 formats." />
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%2382ea41'/%3E%3Ccircle cx='13' cy='27' r='3.2' fill='white' opacity='0.95'/%3E%3Ccircle cx='20' cy='20' r='3.6' fill='white'/%3E%3Ccircle cx='27' cy='13' r='3.2' fill='white' opacity='0.85'/%3E%3C/svg%3E" />
+    <meta name="theme-color" content="#82ea41" />
+
+    <title>ShipIt Palette — Design System Variables &amp; Styles, Fast</title>
+    <meta name="description" content="A modern color-palette studio. Turn one hex into a production-ready design system — full shade scales, 18+ tools, Figma integration, 14 export formats (CSS, Tailwind v4, SCSS, JSON, Swift, Android, Flutter, SVG)." />
+    <meta name="keywords" content="color palette generator, design system, design tokens, tailwind colors, figma variables, tokens studio, oklch, color tools, accessibility, WCAG contrast, palette generator, brand kit, react vite tailwind" />
+    <meta name="author" content="Rahul Raj" />
+    <link rel="canonical" href="https://shipit-palette.vercel.app/" />
+
+    <!-- Favicon (uses logo.svg from /public) -->
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="apple-touch-icon" href="/logo.svg" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://shipit-palette.vercel.app/" />
+    <meta property="og:title" content="ShipIt Palette — Design System Variables & Styles, Fast" />
+    <meta property="og:description" content="Pick a color. Ship the palette. 18+ tools, Figma integration, live UI playground, 14 export formats." />
+    <meta property="og:image" content="https://shipit-palette.vercel.app/banner.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:site_name" content="ShipIt Palette" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://shipit-palette.vercel.app/" />
+    <meta name="twitter:title" content="ShipIt Palette — Design System Variables & Styles, Fast" />
+    <meta name="twitter:description" content="Pick a color. Ship the palette. 18+ tools, Figma integration, live UI playground, 14 export formats." />
+    <meta name="twitter:image" content="https://shipit-palette.vercel.app/banner.svg" />
+
+    <!-- JSON-LD structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "ShipIt Palette",
+      "description": "A modern color-palette studio with 18+ tools, Figma integration, and 14 export formats.",
+      "url": "https://shipit-palette.vercel.app/",
+      "applicationCategory": "DesignApplication",
+      "operatingSystem": "Web",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "author": { "@type": "Person", "name": "Rahul Raj" },
+      "license": "https://opensource.org/licenses/MIT",
+      "softwareVersion": "1.0.0"
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   </head>
   <body class="bg-neutral-50 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 font-sans antialiased">
     <div id="root"></div>
+    <noscript>ShipIt Palette requires JavaScript to run. Please enable it in your browser.</noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

@@ -1,6 +1,10 @@
 <div align="center">
 
-<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM4MmVhNDEiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzMjYxMTUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHJ4PSIxMCIgZmlsbD0idXJsKCNnKSIvPjxjaXJjbGUgY3g9IjEzIiBjeT0iMjciIHI9IjMuMiIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuOTUiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIzLjYiIGZpbGw9IndoaXRlIi8+PGNpcmNsZSBjeD0iMjciIGN5PSIxMyIgcj0iMy4yIiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC44NSIvPjxwYXRoIGQ9Ik0zMCA4LjVMMzIuNSA2TTMwIDExSDMzLjVNMjcuNSA4LjVWNiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC45Ii8+PC9zdmc+" alt="ShipIt Palette" width="100" />
+<img src="./public/banner.svg" alt="ShipIt Palette" width="100%" />
+
+<br><br>
+
+<img src="./public/logo.svg" alt="ShipIt Palette logo" width="100" />
 
 # ShipIt Palette
 

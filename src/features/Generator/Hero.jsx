@@ -104,9 +104,9 @@ export default function Hero({ baseHex, name, palette, count, onRandom, onSetHex
 
 function Stat({ label, value, badge }) {
   return (
-    <div className="flex items-center gap-2 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 px-3 py-1.5">
+    <div className="flex items-center gap-2 rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 px-3 py-1.5">
       <div>
-        <div className="text-[10px] font-medium uppercase tracking-wider text-neutral-500">{label}</div>
+        <div className="text-[10px] font-medium uppercase tracking-wider text-neutral-500 dark:text-neutral-400">{label}</div>
         <div className="font-mono text-sm font-semibold tabular-nums text-neutral-900 dark:text-neutral-100">{value}</div>
       </div>
       <span
@@ -120,13 +120,15 @@ function Stat({ label, value, badge }) {
 }
 
 function ChipBtn({ icon, label, onClick, active }) {
+  const base = 'flex items-center gap-1.5 rounded-xl border px-3 py-1.5 text-xs font-medium transition hover:-translate-y-0.5 hover:shadow-sm';
+  const inactive = 'border-neutral-200 dark:border-neutral-700 text-neutral-700 dark:text-neutral-200 bg-white dark:bg-neutral-900 hover:bg-neutral-50 dark:hover:bg-neutral-800';
   return (
     <button
       onClick={onClick}
-      className="flex items-center gap-1.5 rounded-xl border px-3 py-1.5 text-xs font-medium transition hover:-translate-y-0.5 hover:shadow-sm"
+      className={`${base} ${active ? '' : inactive}`}
       style={active
-        ? { background: 'color-mix(in srgb, var(--brand-500) 14%, transparent)', borderColor: 'var(--brand-500)', color: 'var(--brand-700)' }
-        : { borderColor: 'rgb(229 229 229 / 1)', color: 'rgb(64 64 64)' }}
+        ? { background: 'color-mix(in srgb, var(--brand-500) 16%, transparent)', borderColor: 'var(--brand-500)', color: 'var(--brand-600)' }
+        : undefined}
     >
       <Icon name={icon} size={12} /> {label}
     </button>

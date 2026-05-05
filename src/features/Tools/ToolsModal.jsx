@@ -3,20 +3,34 @@ import Icon from '../../components/common/Icon.jsx';
 import Badge from '../../components/common/Badge.jsx';
 
 const TOOLS = [
+  // Palette
   { id: 'semantic',     icon: 'palette',  title: 'Semantic Palette',  body: 'Auto-generate primary / success / warning / danger / neutral scales from your color.', group: 'Palette' },
   { id: 'brandkit',     icon: 'tokens',   title: 'Brand Kit',         body: 'Pick three colors and generate full scales for primary + secondary + tertiary.', group: 'Palette' },
   { id: 'saved',        icon: 'sparkle',  title: 'Saved Library',     body: 'Save & restore palettes with custom names. Export / import as JSON.', group: 'Palette' },
 
+  // Color Tools
   { id: 'image',        icon: 'svg',      title: 'Image Extractor',   body: 'Drop an image and pull out its 6 dominant colors automatically.', group: 'Color Tools' },
   { id: 'blindness',    icon: 'sun',      title: 'Color Blindness',   body: 'Preview your palette as Deuteranopia / Protanopia / Tritanopia.', group: 'Color Tools' },
   { id: 'pairs',        icon: 'shuffle',  title: 'Pair Suggestions',  body: 'Color-theory pairings: complementary, analogous, triadic, split-comp, tetradic.', group: 'Color Tools' },
   { id: 'gradient',     icon: 'arrow',    title: 'Gradient Builder',  body: 'Combine two shades into a gradient. Export as CSS, Tailwind v3 / v4, SCSS.', group: 'Color Tools' },
+  { id: 'compare',      icon: 'json',     title: 'Compare Mode',      body: 'Pick two base colors and compare their palettes side-by-side, with deltas.', group: 'Color Tools', badge: 'New' },
+  { id: 'custom',       icon: 'css',      title: 'Custom Algorithm',  body: 'Drag 11 sliders to design your own lightness curve.', group: 'Color Tools', badge: 'New' },
+  { id: 'ai',           icon: 'sparkle',  title: 'AI Naming',         body: 'Type a vibe — “forest cabin”, “neon arcade” — and get suggested colors.', group: 'Color Tools', badge: 'New' },
 
+  // Accessibility
   { id: 'textcolor',    icon: 'check',    title: 'Auto Text Color',   body: 'Find the most readable text color for every shade in your palette.', group: 'Accessibility' },
-  { id: 'matrix',       icon: 'tokens',   title: 'Contrast Matrix',   body: 'Grid of every text-on-background combination, color-coded by WCAG / APCA.', group: 'Accessibility', badge: 'New' },
+  { id: 'matrix',       icon: 'tokens',   title: 'Contrast Matrix',   body: 'Grid of every text-on-background combination, color-coded by WCAG / APCA.', group: 'Accessibility' },
+
+  // Export
+  { id: 'figma',        icon: 'sparkle',  title: 'Figma Export',      body: 'Tokens Studio JSON · Figma Variables · custom Figma plugin generator.', group: 'Export' },
+  { id: 'tailwind',     icon: 'tailwind', title: 'Tailwind v4 Install', body: 'Guided 3-step install with live @theme block + example usage.', group: 'Export', badge: 'New' },
+  { id: 'og',           icon: 'svg',      title: 'OG Image',          body: 'Generate a beautiful 1200×630 PNG for social sharing.', group: 'Export', badge: 'New' },
+  { id: 'specsheet',    icon: 'json',     title: 'Spec Sheet',        body: 'Printable / PDF-ready palette spec sheet with hex / RGB / HSL / WCAG.', group: 'Export', badge: 'New' },
+  { id: 'embed',        icon: 'css',      title: 'Embed Code',        body: 'Generate an <iframe> snippet for blogs and docs.', group: 'Export', badge: 'New' },
+  { id: 'history',      icon: 'shuffle',  title: 'History · Undo',    body: 'Cmd+Z support · visual timeline of every color change.', group: 'Export', badge: 'New' },
 ];
 
-const GROUPS = ['Palette', 'Color Tools', 'Accessibility'];
+const GROUPS = ['Palette', 'Color Tools', 'Accessibility', 'Export'];
 
 export default function ToolsModal({ open, onClose, onPick }) {
   return (
